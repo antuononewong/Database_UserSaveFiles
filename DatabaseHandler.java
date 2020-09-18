@@ -1,4 +1,4 @@
-package businessOps.Database;
+package User.Database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,8 +21,6 @@ public class DatabaseHandler {
 	
 	// Database connection
 	private Connection connection = null;
-	
-	public DatabaseHandler() {}
 	
 	// Attempt to connect to database based on stored credentials.
 	public void getConnection() throws SQLException {
@@ -106,18 +104,4 @@ public class DatabaseHandler {
 		System.out.println(e);
 		System.out.println("Error trying to process SQL query.");
 	}
-	
-	// connect
-	// create query
-	// execute query
-	// process results from query
-	// close connection
-	
-	// database schema 
-	// id, username, hp, mana, credits, checkpoint, quest
-	
-	// separate database functions more
-	// have a common file for scripts used for connecting/error checks/etc..
-	// this one can be renamed to database.saveFiles
-
 }
