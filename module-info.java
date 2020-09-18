@@ -1,5 +1,5 @@
-module businessOps {
-	exports businessOps.Database;
-	exports businessOps.UI;
+module user {
+	exports user.Database;
+	exports user.UI;
 	requires java.sql;
 }
