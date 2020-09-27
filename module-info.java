@@ -1,5 +1,4 @@
-module user {
-	exports user.Database;
-	exports user.UI;
+module GameDatabase {
+	exports GameDatabase.SaveFiles;
 	requires java.sql;
 }
