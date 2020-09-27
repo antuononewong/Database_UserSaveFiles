@@ -1,4 +1,4 @@
-package user.Database;
+package GameDatabase.SaveFiles;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ import java.util.Properties;
  * save files from the database, and closes the same connection.
  */
 
-public class DatabaseHandler {
+public class SaveFileHandler {
 	
 	// Database credentials
 	private String userName = "root";
@@ -104,4 +104,3 @@ public class DatabaseHandler {
 		System.out.println(e);
 		System.out.println("Error trying to process SQL query.");
 	}
-}
